@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>
+    <link rel="icon" type="image/x-icon" href="./fav.png">
     <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        .card {
+            transition : transform 0.3s ease;
+    }
+        .card:hover{
+            transform : scale(1.1);
+        }
+    </style>
+    
 </head>
 <body>
     <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
@@ -22,10 +32,13 @@
             </ul>
         </div>
     </nav>
-    <div>
-        <h2>Products Page</h2>
-    </div>
-    <div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a style="text-decoration: none; "href="./index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Products</li>
+        </ol>
+    </nav>
+    <div class="container mt-5">
         <div class="row">
             <div class="col-3">
                 <div class="card bg-secondary">
@@ -51,7 +64,7 @@
                     <div class="card-header text-white" style="background-color:rgb(138, 157, 168);">
                         <img class="card-img" height="180px" width="150px" src="https://rukminim2.flixcart.com/image/200/200/l111lzk0/cycle/m/r/e/xc-900-grey-lite-26-15-5-cradiac-21-gear-120-original-imagczuzpxeweczm.jpeg?q=70" alt="Geared Cycle" >
                         <div>
-                            <div class="card-img-overlay"></div>
+                        
                             <h5><div class="card-title" style="text-align: center;">Urban Terrain Rio with Complete Accessories   </div></h5>
                         </div>
                     </div>
